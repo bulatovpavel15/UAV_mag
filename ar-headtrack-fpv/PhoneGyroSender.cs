@@ -1,26 +1,3 @@
-/*
- * PhoneGyroSender.cs
- * ==================
- * Скрипт для МОБИЛЬНОГО приложения (телефон).
- * 
- * Требования:
- *   - Unity 2021.3+ с пакетами:
- *       • AR Foundation (com.unity.xr.arfoundation)
- *       • ARCore XR Plugin (com.unity.xr.arcore)   — для Android
- *       • ARKit  XR Plugin (com.unity.xr.arkit)     — для iOS
- *   - На сцене: AR Session + AR Session Origin (или XR Origin в новых версиях)
- *
- * Что делает:
- *   1. Берёт ориентацию AR-камеры (гироскоп + акселерометр, sensor fusion от ARCore/ARKit)
- *   2. Пакует кватернион + метку времени в компактный пакет (20 байт)
- *   3. Отправляет по UDP на IP симулятора
- *
- * Установка AR Foundation (Package Manager → Unity Registry):
- *   1. AR Foundation
- *   2. ARCore XR Plugin (Android) или ARKit XR Plugin (iOS)
- *   3. В Project Settings → XR Plug-in Management включить ARCore / ARKit
- */
-
 using System;
 using System.Net;
 using System.Net.Sockets;
